@@ -1,0 +1,141 @@
+@media (min-width: 576px) {
+    .container-web {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-web {
+        max-width: 720px;
+    }
+}
+
+
+@media (min-height: 800px) {}
+
+// 992-den yuxari
+@media (min-width: 992px) {
+    .container-web {
+        max-width: 1100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-web {
+        max-width: 1220px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .container-web {
+        max-width: 1350px;
+    }
+}
+
+@media (min-width: 1700px) {}
+
+
+// asagi
+@media only screen and (max-width: 1346px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1180px) {}
+
+// 992-den asagi
+@media only screen and (max-width: 992px) {
+    .navWeb {
+        display: none !important;
+    }
+
+    #header {
+        .row {
+            justify-content: center;
+        }
+    }
+
+    .navMobile {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .langSearch {
+        justify-content: end !important;
+
+        .languageBox {
+            margin-right: 40px !important;
+
+
+            .headRight {
+
+                .headLanguage {
+                    .langDropdown {
+
+                        width: 45px !important;
+                        padding: 5px 0px 5px 7px !important;
+                        font-size: 20px;
+
+                        .arrow-down {
+                            top: 55%;
+                            right: 14px;
+                            width: 7px !important;
+                            height: 7px !important;
+                        }
+
+                        .dropdown-content {
+                            border-radius: 7px;
+                            border-top-left-radius: 2px;
+                            border-top-right-radius: 2px;
+                            width: 45px !important;
+                            padding: 8px 0;
+                            top: 36px;
+
+                            ul {
+
+                                li {
+                                    padding: 5px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .searchBox {
+        display: none !important;
+    }
+
+    .navbar-mobile {
+        display: block !important;
+
+        h1 {
+            font-size: 18px !important;
+        }
+
+        .offcanvas {
+            width: calc(100vw - 100vw*0.6) !important;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 576px) {
+    .navbar-mobile {
+        display: block !important;
+
+
+        .offcanvas {
+            width: calc(100vw - 100vw*0.18) !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {}
