@@ -188,16 +188,16 @@ header {
 
                         .navbar-toggler {
                             font-size: 15px;
+                            margin-right: 10px;
 
                             .navbar-toggler-icon {}
                         }
 
                         .offcanvas {
-                            width: calc(100vw - 100vw*0.5);
 
                             .offcanvas-header {
                                 .offcanvas-title {
-                                    .img {}
+                                    img {}
                                 }
                             }
 
@@ -211,6 +211,7 @@ header {
                                         .dropdown-menu {
                                             li {
                                                 .dropdown-item {
+                                                    margin-bottom: 5px;
                                                     display: flex;
                                                     align-items: center;
 

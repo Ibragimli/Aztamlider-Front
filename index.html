@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Yeni sayt</title>
+    <title>AzTamLider</title>
 
     <!-- owlCarousel -->
     <link rel="stylesheet" href="./assets/styles/css/owl.carousel.min.css">
@@ -47,7 +47,7 @@
                         </a>
                     </div>
 
-                    <div class="navWeb  col-lg-8 col-md-2   navbarBox">
+                    <div class="navWeb  col-lg-8 col-md-7   navbarBox">
                         <nav class=" webNavbar">
                             <ul class="mainNavbar">
                                 <li class="nav-item dropdown">
@@ -125,6 +125,7 @@
                     </div>
 
                     <div class=" col-lg-1 col-6  langSearch">
+                        <!-- language -->
                         <div class="  languageBox">
                             <div class="headRight ">
                                 <div class="headLanguage ">
@@ -147,11 +148,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="searchBox">
+
+                        <!-- searchBox -->
+                        <div class="ms-1 me-2 searchBox">
                             <a href="#">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
                         </div>
+                        <!-- mobile navbar -->
                         <nav class="navbar navbar-mobile">
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -204,8 +208,8 @@
                                                         <h1>İsitmə Soyutma və Havalandırma</h1>
                                                     </a></li>
                                                 <li><a class="dropdown-item" href="#"><i class="fas fa-cloud-bolt"></i>
-                                                        <h1>Alçaq Gərilim və Orta 
-                                                            Gərilim  <br>Elektrik İşləri</h1>
+                                                        <h1>Alçaq Gərilim və Orta
+                                                            Gərilim <br>Elektrik İşləri</h1>
                                                     </a></li>
                                                 <li><a class="dropdown-item" href="#"> <i class="fas fa-plug"></i>
                                                         <h1>Zəif Axın Sistemləri</h1>
@@ -246,6 +250,7 @@
                                 </div>
                             </div>
                         </nav>
+
                         <!-- <div class="navMobile   ">
                             <div class="text-center hamburger-icon">
                                 <i class="fas fa-bars"></i>
@@ -316,9 +321,25 @@
                     class="fa-solid fa-phone-volume "></i></a>
         </div> -->
 
-        <div style="width: 100%; height: 100vh; position: absolute; top: 0; left: 0;" class="backGroundImage">
-            <img style="width: 100%; height: 100vh; object-fit: cover;" src="./assets/Images/53.jpeg" alt="">
-        </div>
+        <section id="mainSlider">
+            <div class="backGroundImages">
+                <div class="backGroundImage activeMainSlider">
+                    <img src="./assets/Images/53.jpeg" alt="">
+                </div>
+                <div class="backGroundImage">
+                    <img src="./assets/Images/architecture-background-design_1168-110.jpeg" alt="">
+                </div>
+                <div class="backGroundImage">
+                    <img src="./assets/Images/architecture-background-design_1168-158.jpeg" alt="">
+                </div>
+                <div class="backGroundImage">
+                    <img src="./assets/Images/architecture-background-design_1168-187.jpeg" alt="">
+                </div>
+                <div class="backGroundImage">
+                    <img src="./assets/Images/testslide.jpg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -346,6 +367,35 @@
                 $('.mobileNavbar').toggle();
             });
         });
+    </script>
+    <script>
+        // JavaScript kodu
+        window.addEventListener("DOMContentLoaded", function () {
+            // Sliderı seçin
+            var slider = document.getElementById("mainSlider");
+
+            // Sliderdaki tüm görüntüleri seçin
+            var images = slider.querySelectorAll(".backGroundImage");
+
+            // Başlangıçta görüntüleri saklamak için bir sayaç tanımlayın
+            var currentImageIndex = 0;
+
+            // Sliderı otomatik olarak döndürmek için bir fonksiyon oluşturun
+            function rotateSlider() {
+                // Mevcut görüntünün aktif sınıfını kaldırın
+                images[currentImageIndex].classList.remove("activeMainSlider");
+
+                // Bir sonraki görüntünün indeksini belirleyin
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+
+                // Yeni görüntüye aktif sınıfını ekleyin
+                images[currentImageIndex].classList.add("activeMainSlider");
+            }
+
+            // Slider'ı her 3 saniyede bir döndürmek için setInterval kullanın
+            setInterval(rotateSlider, 3000);
+        });
+
     </script>
 </body>
 

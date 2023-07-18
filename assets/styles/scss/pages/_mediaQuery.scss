@@ -39,12 +39,49 @@
 // asagi
 @media only screen and (max-width: 1346px) {}
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    .langSearch {
+        .languageBox {
+            .headRight {
+
+                .headLanguage {
+                    .langDropdown {
+
+                        width: 50px !important;
+                        padding: 6px 0px 6px 8px !important;
+
+                        .arrow-down {
+                            width: 8px !important;
+                            height: 8px !important;
+                        }
+
+                        .dropdown-content {
+                            width: 50px !important;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
 
 @media only screen and (max-width: 1180px) {}
 
 // 992-den asagi
 @media only screen and (max-width: 992px) {
+    #mainSlider {
+        .backGroundImages {
+            .backGroundImage {
+                img {
+                    object-fit: cover !important;
+                }
+            }
+        }
+    }
+
     .navWeb {
         display: none !important;
     }
@@ -75,29 +112,14 @@
 
                         width: 45px !important;
                         padding: 5px 0px 5px 7px !important;
-                        font-size: 20px;
 
                         .arrow-down {
-                            top: 55%;
-                            right: 14px;
                             width: 7px !important;
                             height: 7px !important;
                         }
 
                         .dropdown-content {
-                            border-radius: 7px;
-                            border-top-left-radius: 2px;
-                            border-top-right-radius: 2px;
                             width: 45px !important;
-                            padding: 8px 0;
-                            top: 36px;
-
-                            ul {
-
-                                li {
-                                    padding: 5px 10px;
-                                }
-                            }
                         }
                     }
                 }
@@ -114,18 +136,20 @@
     .navbar-mobile {
         display: block !important;
 
-        h1 {
-            font-size: 18px !important;
-        }
 
-        .offcanvas {
-            width: calc(100vw - 100vw*0.6) !important;
-        }
+
     }
+
 
 }
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    .navbar-mobile {
+        .offcanvas {
+            width: calc(100vw - 100vw*0.45) !important;
+        }
+    }
+}
 
 @media only screen and (max-width: 576px) {
     .navbar-mobile {
@@ -134,8 +158,74 @@
 
         .offcanvas {
             width: calc(100vw - 100vw*0.18) !important;
+
+            .offcanvas-header {
+                .offcanvas-title {
+                    img {
+                        width: 180px !important;
+                    }
+                }
+            }
+
+            .offcanvas-body {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            h1 {
+                                font-size: 18px !important;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            li {
+                                .dropdown-item {
+
+                                    h1 {
+                                        font-size: 18px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @media only screen and (max-width: 450px) {}
+
+@media only screen and (max-width: 390px) {
+    .navbar-mobile {
+
+
+        .offcanvas {
+            width: calc(100vw - 100vw*0.1) !important;
+
+            .offcanvas-body {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            h1 {
+                                font-size: 18px !important;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            li {
+                                .dropdown-item {
+                                    padding: 0px !important;
+                                    padding: 0px 20px 0px 10px !important;
+
+                                    h1 {
+                                        font-size: 18px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
