@@ -1,14 +1,15 @@
 header {
-    position: absolute;
+    position: fixed !important;
     top: 0;
     left: 0;
     z-index: 20;
 
     width: 100%;
 
+transition: all 0.4s;
     #header {
         padding: 15px 0px;
-        background-color: rgba(255, 255, 255, 0.182);
+        // background-color: rgba(255, 255, 255, 0.541);
 
         h1 {
             font-size: 20px;
@@ -78,7 +79,7 @@ header {
                             .headLanguage {
                                 .langDropdown {
 
-                                    background-color: white;
+                                    background-color: rgba(255, 255, 255, 0.795);
                                     width: 52px;
                                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                                     padding: 8px 0px 8px 8px;
@@ -115,7 +116,7 @@ header {
                                         border-top-right-radius: 2px;
                                         display: none;
                                         position: absolute;
-                                        background-color: white;
+                                        background-color: rgba(255, 255, 255, 0.795);
                                         width: 52px;
                                         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -128,6 +129,7 @@ header {
                                             list-style: none;
                                             padding: 0;
                                             margin: 0;
+                                            background-color: rgba(255, 255, 255, 0.795);
 
                                             li {
                                                 padding: 5px 10px;
@@ -169,11 +171,25 @@ header {
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        position: relative;
+
+                        .searchFormDeskBox {
+                            position: absolute;
+                            top: 55px;
+                            right: 0px;
+                            display: none;
+
+                            input {
+                                width: 300px;
+                            }
+
+                            button {}
+                        }
 
                         a {
                             border-radius: 20%;
-                            background-color: rgba(255, 255, 255, 0.418);
-                            padding: 8px;
+                            background-color: rgba(255, 255, 255, 0.795);
+                            padding: 11px 11px;
                             box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 
                             i {
@@ -247,4 +263,11 @@ header {
             }
         }
     }
+
+}
+
+.headerFixed {
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255, 0.808);
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic);
 body main {
@@ -9,14 +10,14 @@ body .container-web {
   margin-left: auto; }
 
 header {
-  position: absolute;
+  position: fixed !important;
   top: 0;
   left: 0;
   z-index: 20;
-  width: 100%; }
+  width: 100%;
+  transition: all 0.4s; }
   header #header {
-    padding: 15px 0px;
-    background-color: rgba(255, 255, 255, 0.182); }
+    padding: 15px 0px; }
     header #header h1 {
       font-size: 20px;
       color: black;
@@ -57,7 +58,7 @@ header {
         align-items: center;
         justify-content: center; }
         header #header .container-web .row .langSearch .languageBox .headRight .headLanguage .langDropdown {
-          background-color: white;
+          background-color: rgba(255, 255, 255, 0.795);
           width: 52px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           padding: 8px 0px 8px 8px;
@@ -89,7 +90,7 @@ header {
             border-top-right-radius: 2px;
             display: none;
             position: absolute;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.795);
             width: 52px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             z-index: 1;
@@ -99,7 +100,8 @@ header {
             header #header .container-web .row .langSearch .languageBox .headRight .headLanguage .langDropdown .dropdown-content ul {
               list-style: none;
               padding: 0;
-              margin: 0; }
+              margin: 0;
+              background-color: rgba(255, 255, 255, 0.795); }
               header #header .container-web .row .langSearch .languageBox .headRight .headLanguage .langDropdown .dropdown-content ul li {
                 padding: 5px 10px;
                 cursor: pointer;
@@ -117,11 +119,19 @@ header {
       header #header .container-web .row .langSearch .searchBox {
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        position: relative; }
+        header #header .container-web .row .langSearch .searchBox .searchFormDeskBox {
+          position: absolute;
+          top: 55px;
+          right: 0px;
+          display: none; }
+          header #header .container-web .row .langSearch .searchBox .searchFormDeskBox input {
+            width: 300px; }
         header #header .container-web .row .langSearch .searchBox a {
           border-radius: 20%;
-          background-color: rgba(255, 255, 255, 0.418);
-          padding: 8px;
+          background-color: rgba(255, 255, 255, 0.795);
+          padding: 11px 11px;
           box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
           header #header .container-web .row .langSearch .searchBox a i {
             color: black;
@@ -143,6 +153,10 @@ header {
           border: 1px solid black !important; }
         header #header .container-web .row .langSearch .navbar-mobile .offcanvas .offcanvas-body form input:focus {
           box-shadow: none; }
+
+.headerFixed {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(255, 255, 255, 0.808); }
 
 html,
 body,
@@ -337,10 +351,35 @@ body a {
       width: 8px !important;
       height: 8px !important; }
     .langSearch .languageBox .headRight .headLanguage .langDropdown .dropdown-content {
-      width: 50px !important; } }
+      width: 50px !important; }
+
+  #partnerLogos {
+    padding: 80px 25px !important; }
+
+  #copyRight .row p {
+    padding: 10px 25px !important; } }
+@media only screen and (max-width: 1120px) {
+  #partnerLogos {
+    padding: 80px 25px !important; } }
 @media only screen and (max-width: 992px) {
+  #partnerLogos {
+    padding: 80px 25px !important; }
+    #partnerLogos .partnerTitleBox p {
+      font-size: 22px !important; }
+
+  #copyRight .row p {
+    padding: 10px 20px !important; }
+
   #mainSlider .backGroundImages .backGroundImage img {
     object-fit: cover !important; }
+  #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
+    position: absolute;
+    top: 40%;
+    left: 15%; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
+      font-size: 40px !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
+      font-size: 20px !important; }
 
   .navWeb {
     display: none !important; }
@@ -368,9 +407,22 @@ body a {
 
   .searchBox {
     display: none !important; }
+    .searchBox .searchFormDeskBox {
+      display: none !important; }
 
   .navbar-mobile {
     display: block !important; } }
+@media only screen and (max-width: 800px) {
+  .navbar-mobile .offcanvas {
+    width: calc(100vw - 100vw*0.45) !important; }
+
+  #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
+    top: 40% !important;
+    left: 12% !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
+      font-size: 33px !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
+      font-size: 18px !important; } }
 @media only screen and (max-width: 800px) {
   .navbar-mobile .offcanvas {
     width: calc(100vw - 100vw*0.45) !important; } }
@@ -384,7 +436,23 @@ body a {
       .navbar-mobile .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link h1 {
         font-size: 18px !important; }
       .navbar-mobile .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu li .dropdown-item h1 {
-        font-size: 18px !important; } }
+        font-size: 18px !important; }
+
+  #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
+    top: 35% !important;
+    left: 10% !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
+      font-size: 31px !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
+      font-size: 17px !important; } }
+@media only screen and (max-width: 450px) {
+  #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
+    top: 34% !important;
+    left: 9% !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
+      font-size: 29px !important; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
+      font-size: 17px !important; } }
 @media only screen and (max-width: 390px) {
   .navbar-mobile .offcanvas {
     width: calc(100vw - 100vw*0.1) !important; }
@@ -442,18 +510,37 @@ body a {
   text-decoration: none; }
 
 #mainSlider .backGroundImages {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #E8E7E5;
+  width: 100%;
+  height: 100vh; }
   #mainSlider .backGroundImages .backGroundImage {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     display: none; }
     #mainSlider .backGroundImages .backGroundImage img {
       width: 100%;
       height: 100vh;
-      object-fit: cover; }
+      object-fit: fill; }
+    #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
+      position: absolute;
+      top: 32%;
+      left: 15%; }
+      #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
+        font-size: 50px;
+        font-weight: 700;
+        color: black;
+        transform: translateX(-200%);
+        animation: slideInFromLeft 0.6s ease 0.1s forwards; }
+      #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.836);
+        animation: slideInFromLeft 0.6s ease 0.1s forwards;
+        transform: translateX(-200%); }
   #mainSlider .backGroundImages .activeMainSlider {
     display: block !important;
     opacity: 1;
@@ -462,16 +549,83 @@ body a {
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateY(-100%); }
+    transform: translateX(-2%); }
   100% {
     opacity: 1;
-    transform: translateY(0); } }
+    transform: translateX(0); } }
 @keyframes slideOut {
   0% {
     opacity: 1;
-    transform: translateY(0); }
+    transform: translateX(0); }
   100% {
     opacity: 0;
-    transform: translateY(100%); } }
+    transform: translateX(20%); } }
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  50% {
+    opacity: 0.6; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+#partnerLogos {
+  padding: 80px 0px;
+  background-color: #e8e7e542; }
+  #partnerLogos .partnerTitleBox h1 {
+    text-align: center;
+    margin-bottom: 25px; }
+  #partnerLogos .partnerTitleBox p {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px; }
+
+#copyRight {
+  position: static;
+  bottom: 0;
+  left: 0;
+  background-color: #e8e7e51f;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; }
+  #copyRight .row {
+    display: flex;
+    align-items: center; }
+    #copyRight .row p {
+      font-size: 16px;
+      color: black;
+      margin-bottom: 0px;
+      padding: 10px 0px;
+      font-weight: 500; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+  /* Kaydırma çubuğu genişliği */ }
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  /* Kaydırma çubuğu rengi */ }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+  /* Kaydırma çubuğu arka plan rengi */ }
+
+::-moz-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff; }
+
+::-moz-scrollbar-thumb {
+  background-color: #000000; }
+
+::-moz-scrollbar-track {
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
