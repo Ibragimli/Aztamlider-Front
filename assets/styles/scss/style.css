@@ -10,14 +10,16 @@ body .container-web {
   margin-left: auto; }
 
 header {
-  position: fixed !important;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 20;
   width: 100%;
+  display: block;
   transition: all 0.4s; }
   header #header {
-    padding: 15px 0px; }
+    padding: 15px 0px;
+    transition: all 0.4s; }
     header #header h1 {
       font-size: 20px;
       color: black;
@@ -155,8 +157,18 @@ header {
           box-shadow: none; }
 
 .headerFixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgba(255, 255, 255, 0.808); }
+  background-color: rgba(255, 255, 255, 0.808);
+  transition: all 0.4s; }
+
+.headerAddFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.4s; }
 
 html,
 body,
@@ -362,6 +374,24 @@ body a {
   #partnerLogos {
     padding: 80px 25px !important; } }
 @media only screen and (max-width: 992px) {
+  #reference .container-web .row .referenceButtons ul li {
+    padding-right: 5px; }
+    #reference .container-web .row .referenceButtons ul li a {
+      width: 100%; }
+      #reference .container-web .row .referenceButtons ul li a h1 {
+        font-size: 22px !important; }
+  #reference .container-web .row .referenceBoxs .row .colReference {
+    margin-bottom: 15px !important; }
+
+  #breadCrumb {
+    height: 220px !important;
+    margin-bottom: 25px;
+    background-size: initial !important; }
+    #breadCrumb .container-web .row .breadCrumbBox ul {
+      right: calc(100vw - 100vw*0.9); }
+      #breadCrumb .container-web .row .breadCrumbBox ul li h1 {
+        font-size: 45px !important; }
+
   #partnerLogos {
     padding: 80px 25px !important; }
     #partnerLogos .partnerTitleBox p {
@@ -411,7 +441,19 @@ body a {
       display: none !important; }
 
   .navbar-mobile {
-    display: block !important; } }
+    display: block !important; }
+
+  #aboutUs .container-web .row .aboutImageBox {
+    padding: 0px 15px !important;
+    margin-top: 5px;
+    margin-bottom: 30px !important; }
+    #aboutUs .container-web .row .aboutImageBox .aboutImage {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important; }
+  #aboutUs .container-web .row .aboutTextBox {
+    margin-left: 10px !important;
+    padding: 0px 10px 0px 10px !important; } }
 @media only screen and (max-width: 800px) {
   .navbar-mobile .offcanvas {
     width: calc(100vw - 100vw*0.45) !important; }
@@ -423,9 +465,17 @@ body a {
       font-size: 33px !important; }
     #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
       font-size: 18px !important; } }
-@media only screen and (max-width: 800px) {
-  .navbar-mobile .offcanvas {
-    width: calc(100vw - 100vw*0.45) !important; } }
+@media only screen and (max-width: 767px) {
+  #reference .container-web .row {
+    margin-top: 20px; }
+    #reference .container-web .row .referenceBoxs {
+      padding: 0px 10px 10px 10px; }
+      #reference .container-web .row .referenceBoxs .row .referenceBox {
+        margin: 0px !important;
+        margin-bottom: 20px;
+        margin-right: 10px !important; }
+        #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName a h1 {
+          font-size: 22px !important; } }
 @media only screen and (max-width: 576px) {
   .navbar-mobile {
     display: block !important; }
@@ -438,13 +488,28 @@ body a {
       .navbar-mobile .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu li .dropdown-item h1 {
         font-size: 18px !important; }
 
+  #breadCrumb {
+    height: 170px !important; }
+    #breadCrumb .container-web .row .breadCrumbBox ul {
+      right: calc(100vw - 100vw*0.93) !important;
+      bottom: 15px !important; }
+      #breadCrumb .container-web .row .breadCrumbBox ul li h1 {
+        font-size: 40px !important; }
+
   #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
     top: 35% !important;
     left: 10% !important; }
     #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderTitle {
       font-size: 31px !important; }
     #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox .mainSliderDesc {
-      font-size: 17px !important; } }
+      font-size: 17px !important; }
+
+  #reference .container-web .row .referenceButtons {
+    padding: 0px 10px; }
+    #reference .container-web .row .referenceButtons ul li a h1 {
+      font-size: 18px !important; }
+  #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName a h1 {
+    font-size: 18px !important; } }
 @media only screen and (max-width: 450px) {
   #mainSlider .backGroundImages .backGroundImage .mainSliderTextBox {
     top: 34% !important;
@@ -462,7 +527,20 @@ body a {
       padding: 0px !important;
       padding: 0px 20px 0px 10px !important; }
       .navbar-mobile .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu li .dropdown-item h1 {
-        font-size: 18px !important; } }
+        font-size: 18px !important; }
+
+  #reference .container-web .row .referenceButtons ul li a h1 {
+    font-size: 16px !important; }
+  #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName a h1 {
+    font-size: 16px !important; }
+
+  #breadCrumb {
+    height: 150px !important; }
+    #breadCrumb .container-web .row .breadCrumbBox ul {
+      right: calc(100vw - 100vw*0.95) !important;
+      bottom: 2px !important; }
+      #breadCrumb .container-web .row .breadCrumbBox ul li h1 {
+        font-size: 37px !important; } }
 /* url(../fonts/SpartanMB-Medium.ttf) format("truetype"), url(../fonts/SpartanMB-Medium.woff) format("woff"), url(../fonts/SpartanMB-Medium.woff2) format("woff2") */
 @font-face {
   font-family: SpartanMB;
@@ -572,6 +650,11 @@ body a {
     opacity: 1;
     transform: translateX(0); } }
 #partnerLogos {
+  background-image: url("/assets/Images/elektrik-proje-cizimi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
   padding: 80px 0px;
   background-color: #e8e7e542; }
   #partnerLogos .partnerTitleBox h1 {
@@ -627,5 +710,89 @@ body a {
 
 ::-moz-scrollbar-track {
   background-color: #ffffff; }
+
+#aboutUs .container-web .row .aboutImageBox {
+  padding: 0px 25px 0px 0px; }
+  #aboutUs .container-web .row .aboutImageBox .aboutImage {
+    width: 100%;
+    height: auto; }
+    #aboutUs .container-web .row .aboutImageBox .aboutImage img {
+      width: 100%;
+      height: auto; }
+#aboutUs .container-web .row .aboutTextBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px; }
+  #aboutUs .container-web .row .aboutTextBox p {
+    font-size: 18px; }
+  #aboutUs .container-web .row .aboutTextBox ul li {
+    list-style: square; }
+    #aboutUs .container-web .row .aboutTextBox ul li p {
+      font-size: 18px; }
+
+#breadCrumb {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 25px;
+  background-image: url("/assets/Images/slider-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  #breadCrumb .container-web .row .breadCrumbBox ul {
+    position: absolute;
+    bottom: 30px;
+    right: calc(100vw - 100vw*0.9); }
+    #breadCrumb .container-web .row .breadCrumbBox ul li h1 {
+      font-size: 50px; }
+
+#reference {
+  margin: 40px 0px; }
+  #reference .container-web .row .referenceButtons ul {
+    display: flex;
+    align-items: center; }
+    #reference .container-web .row .referenceButtons ul li a h1 {
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      transition: all 0.4s;
+      border: 1px solid black;
+      padding: 4px 0px; }
+    #reference .container-web .row .referenceButtons ul li a h1:hover {
+      color: rgba(0, 0, 0, 0.623); }
+    #reference .container-web .row .referenceButtons ul li a .activeReference {
+      background-color: rgba(0, 0, 0, 0.815);
+      color: white;
+      border: 1px solid white; }
+      #reference .container-web .row .referenceButtons ul li a .activeReference span {
+        color: white; }
+  #reference .container-web .row .referenceBoxs {
+    padding: 00px 10px 10px 10px; }
+    #reference .container-web .row .referenceBoxs .row .referenceBox {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+      #reference .container-web .row .referenceBoxs .row .referenceBox .referenceImage {
+        overflow: hidden; }
+        #reference .container-web .row .referenceBoxs .row .referenceBox .referenceImage a img {
+          width: 100%; }
+        #reference .container-web .row .referenceBoxs .row .referenceBox .referenceImage a img:hover {
+          transform: scale(1.1); }
+      #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName {
+        border: 1px dashed black;
+        border-top: 0px; }
+        #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName a h1 {
+          text-align: end;
+          color: black;
+          font-size: 25px;
+          padding: 10px 10px 0px 0px;
+          transition: all 0.4s; }
+        #reference .container-web .row .referenceBoxs .row .referenceBox .referenceName a h1:hover {
+          color: gray; }
+
+#pagenation .row nav .pagination .page-item .pageActive {
+  background-color: black;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

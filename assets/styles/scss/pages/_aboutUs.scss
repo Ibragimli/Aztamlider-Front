@@ -1,0 +1,40 @@
+#aboutUs {
+    .container-web {
+        .row {
+            .aboutImageBox{
+                    padding: 0px 25px 0px 0px;
+                .aboutImage {
+                    width: 100%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        
+
+            .aboutTextBox {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 25px;
+
+                p {
+                    font-size: 18px;
+                }
+
+                h1 {}
+
+                ul {
+                    li {
+                        list-style: square;
+                        p {
+                    font-size: 18px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

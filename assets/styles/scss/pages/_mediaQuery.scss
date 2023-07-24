@@ -65,14 +65,16 @@
             }
         }
     }
+
     #partnerLogos {
         padding: 80px 25px !important;
 
     }
+
     #copyRight {
         .row {
             p {
-                padding: 10px 25px !important; 
+                padding: 10px 25px !important;
             }
         }
     }
@@ -83,12 +85,68 @@
 @media only screen and (max-width: 1120px) {
     #partnerLogos {
         padding: 80px 25px !important;
-       
+
     }
 }
 
 // 992-den asagi
 @media only screen and (max-width: 992px) {
+    #reference {
+        .container-web {
+            .row {
+                .referenceButtons {
+                    ul {
+                        li {
+                            padding-right: 5px;
+
+                            a {
+                                width: 100%;
+
+                                h1 {
+                                    font-size: 22px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .referenceBoxs {
+                    .row {
+                        .colReference {
+
+
+                            margin-bottom: 15px !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #breadCrumb {
+        height: 220px !important;
+        margin-bottom: 25px;
+        background-size: initial !important;
+
+        .container-web {
+            .row {
+                .breadCrumbBox {
+
+                    ul {
+                        right: calc(100vw - 100vw*0.9);
+
+                        li {
+                            h1 {
+                                font-size: 45px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #partnerLogos {
         padding: 80px 25px !important;
 
@@ -103,13 +161,14 @@
 
     #copyRight {
         .row {
-    
+
             p {
-                padding: 10px 20px !important; 
-    
+                padding: 10px 20px !important;
+
             }
         }
     }
+
     #mainSlider {
         .backGroundImages {
             .backGroundImage {
@@ -192,6 +251,30 @@
     .navbar-mobile {
         display: block !important;
     }
+
+    #aboutUs {
+        .container-web {
+            .row {
+                .aboutImageBox {
+                    .aboutImage {
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
+                    }
+
+                    padding: 0px 15px !important;
+                    margin-top: 5px;
+                    margin-bottom: 30px !important;
+                }
+
+
+                .aboutTextBox {
+                    margin-left: 10px !important;
+                    padding: 0px 10px 0px 10px !important;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -200,6 +283,7 @@
             width: calc(100vw - 100vw*0.45) !important;
         }
     }
+
 
     #mainSlider {
         .backGroundImages {
@@ -223,13 +307,38 @@
 
 }
 
-@media only screen and (max-width: 800px) {
-    .navbar-mobile {
-        .offcanvas {
-            width: calc(100vw - 100vw*0.45) !important;
+@media only screen and (max-width: 767px) {
+    #reference {
+        .container-web {
+            .row {
+                margin-top: 20px;
+
+                .referenceBoxs {
+                    padding: 0px 10px 10px 10px;
+
+                    .row {
+
+                        .referenceBox {
+                            margin: 0px !important;
+                            margin-bottom: 20px;
+                            margin-right: 10px !important;
+
+                            .referenceName {
+                                a {
+                                    h1 {
+                                        font-size: 22px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+
 }
+
 
 
 @media only screen and (max-width: 576px) {
@@ -273,6 +382,28 @@
         }
     }
 
+    #breadCrumb {
+        height: 170px !important;
+
+        .container-web {
+            .row {
+                .breadCrumbBox {
+
+                    ul {
+                        right: calc(100vw - 100vw*0.93) !important;
+                        bottom: 15px !important;
+
+                        li {
+                            h1 {
+                                font-size: 40px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #mainSlider {
         .backGroundImages {
             .backGroundImage {
@@ -292,6 +423,44 @@
             }
         }
     }
+
+    #reference {
+        .container-web {
+            .row {
+
+                .referenceButtons {
+                    padding: 0px 10px;
+
+                    ul {
+                        li {
+                            a {
+                                h1 {
+                                    font-size: 18px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .referenceBoxs {
+                    .row {
+
+                        .referenceBox {
+
+                            .referenceName {
+                                a {
+                                    h1 {
+                                        font-size: 18px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -342,6 +511,63 @@
                                         font-size: 18px !important;
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #reference {
+        .container-web {
+            .row {
+
+                .referenceButtons {
+                    ul {
+                        li {
+                            a {
+                                h1 {
+                                    font-size: 16px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .referenceBoxs {
+                    .row {
+
+                        .referenceBox {
+
+                            .referenceName {
+                                a {
+                                    h1 {
+                                        font-size: 16px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #breadCrumb {
+        height: 150px !important;
+
+        .container-web {
+            .row {
+                .breadCrumbBox {
+
+                    ul {
+                        right: calc(100vw - 100vw*0.95) !important;
+                        bottom: 2px !important;
+
+                        li {
+                            h1 {
+                                font-size: 37px !important;
                             }
                         }
                     }

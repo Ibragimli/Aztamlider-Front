@@ -1,15 +1,17 @@
 header {
-    position: fixed !important;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 20;
-
     width: 100%;
+    display: block;
 
-transition: all 0.4s;
+    transition: all 0.4s;
+
     #header {
         padding: 15px 0px;
         // background-color: rgba(255, 255, 255, 0.541);
+        transition: all 0.4s;
 
         h1 {
             font-size: 20px;
@@ -267,7 +269,19 @@ transition: all 0.4s;
 }
 
 .headerFixed {
-   
+    position: fixed !important;
+    top: 0;
+    left: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgba(255, 255, 255, 0.808);
+    transition: all 0.4s;
+
+}
+
+.headerAddFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+
 }
