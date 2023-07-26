@@ -49,6 +49,21 @@ header {
 
                             .nav-item {
                                 margin-right: 20px;
+
+
+                            }
+
+                            .dropdown-hover {
+                                .dropdown-menu {
+                                    transition: all 0.5s;
+
+                                }
+                            }
+
+                            .dropdown-hover:hover {
+                                .dropdown-menu {
+                                    display: block;
+                                }
                             }
                         }
                     }

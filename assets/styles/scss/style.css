@@ -43,6 +43,10 @@ header {
         display: flex; }
         header #header .container-web .row .navbarBox .webNavbar .mainNavbar .nav-item {
           margin-right: 20px; }
+        header #header .container-web .row .navbarBox .webNavbar .mainNavbar .dropdown-hover .dropdown-menu {
+          transition: all 0.5s; }
+        header #header .container-web .row .navbarBox .webNavbar .mainNavbar .dropdown-hover:hover .dropdown-menu {
+          display: block; }
     header #header .container-web .row .navMobile {
       position: relative;
       display: none; }
@@ -374,6 +378,15 @@ body a {
   #partnerLogos {
     padding: 80px 25px !important; } }
 @media only screen and (max-width: 992px) {
+  #project {
+    margin: 50px 20px 5px 20px !important; }
+    #project .container-web .row ul li .servicesBoxs .servicesBox {
+      display: flex;
+      align-items: center; }
+      #project .container-web .row ul li .servicesBoxs .servicesBox img {
+        padding-right: 0px !important;
+        height: 350px !important; }
+
   #reference .container-web .row .referenceButtons ul li {
     padding-right: 5px; }
     #reference .container-web .row .referenceButtons ul li a {
@@ -453,7 +466,16 @@ body a {
       align-items: center !important; }
   #aboutUs .container-web .row .aboutTextBox {
     margin-left: 10px !important;
-    padding: 0px 10px 0px 10px !important; } }
+    padding: 0px 10px 0px 10px !important; }
+
+  #contactUs {
+    margin: 60px 25px !important;
+    position: relative; }
+    #contactUs .container-web .row .imgBox-2 img {
+      top: 20px !important;
+      right: 0px;
+      width: calc((100vw - 100vw * 0.48)) !important;
+      height: calc((100vh - 100vh * 0.44)) !important; } }
 @media only screen and (max-width: 800px) {
   .navbar-mobile .offcanvas {
     width: calc(100vw - 100vw*0.45) !important; }
@@ -794,5 +816,136 @@ body a {
 #pagenation .row nav .pagination .page-item .pageActive {
   background-color: black;
   color: white; }
+
+#contactUs {
+  margin: 60px 0px;
+  position: relative; }
+  #contactUs .container-web .row .imgBox-2 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc((100vw - 100vw * 0.78));
+    height: calc((100vh - 100vh * 0.54));
+    z-index: -1; }
+  #contactUs .container-web .row .contactInfo h1 {
+    margin-bottom: 10px; }
+  #contactUs .container-web .row .contactInfo ul {
+    margin-left: 10px; }
+    #contactUs .container-web .row .contactInfo ul li {
+      margin-bottom: 5px; }
+      #contactUs .container-web .row .contactInfo ul li a {
+        color: black;
+        font-size: 22px; }
+        #contactUs .container-web .row .contactInfo ul li a i {
+          margin-right: 5px; }
+
+#document {
+  margin: 40px 0px; }
+  #document .container-web .row .documentBoxs {
+    padding: 0px 10px;
+    margin-bottom: 33px; }
+    #document .container-web .row .documentBoxs .documentBox {
+      transition: all 0.4s;
+      position: relative;
+      border: 1px dashed gainsboro;
+      overflow: hidden; }
+      #document .container-web .row .documentBoxs .documentBox .imgDocumentBox img {
+        width: 100%;
+        max-height: 550px;
+        object-fit: fill;
+        object-position: center; }
+      #document .container-web .row .documentBoxs .documentBox .titleDocumentBox h1 {
+        text-align: end;
+        font-size: 24px;
+        color: black;
+        padding-top: 10px;
+        padding-right: 10px; }
+      #document .container-web .row .documentBoxs .documentBox .btnDocumentBox {
+        position: absolute;
+        top: 25%;
+        right: 2px;
+        transition: all 0.4s;
+        opacity: 0; }
+        #document .container-web .row .documentBoxs .documentBox .btnDocumentBox ul li {
+          margin-bottom: 20px; }
+          #document .container-web .row .documentBoxs .documentBox .btnDocumentBox ul li a i {
+            color: black;
+            font-size: 35px;
+            transition: all 0.4s; }
+          #document .container-web .row .documentBoxs .documentBox .btnDocumentBox ul li a i:hover {
+            color: gray; }
+    #document .container-web .row .documentBoxs .documentBox:hover .btnDocumentBox {
+      opacity: 1; }
+
+#documentImageModal .modal-content {
+  background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: none;
+  border: none; }
+  #documentImageModal .modal-content .modal-header {
+    border-bottom: none; }
+    #documentImageModal .modal-content .modal-header button {
+      font-size: 13px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px; }
+  #documentImageModal .modal-content .modal-body .slider {
+    margin: 0 auto;
+    position: relative;
+    max-height: 650px; }
+    #documentImageModal .modal-content .modal-body .slider .slides {
+      display: flex;
+      transition: transform 0.3s ease-in-out; }
+      #documentImageModal .modal-content .modal-body .slider .slides img {
+        width: 100%;
+        max-height: 650px;
+        object-fit: contain; }
+    #documentImageModal .modal-content .modal-body .slider .prev,
+    #documentImageModal .modal-content .modal-body .slider .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer; }
+    #documentImageModal .modal-content .modal-body .slider .prev {
+      left: 0; }
+    #documentImageModal .modal-content .modal-body .slider .next {
+      right: 0; }
+    #documentImageModal .modal-content .modal-body .slider .prev,
+    #documentImageModal .modal-content .modal-body .slider .next:hover {
+      color: rgba(0, 0, 0, 0.712); }
+
+.fade {
+  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.342) !important; }
+
+#project {
+  margin: 40px 0px; }
+  #project .container-web .row p {
+    font-size: 22px; }
+  #project .container-web .row ul li {
+    margin-bottom: 30px; }
+    #project .container-web .row ul li h1 {
+      margin-bottom: 15px; }
+    #project .container-web .row ul li .servicesBoxs .servicesBox img {
+      height: 450px;
+      width: 100%;
+      padding-right: 30px;
+      margin-bottom: 15px; }
+    #project .container-web .row ul li .servicesBoxs .servicesBox p {
+      line-height: 40px; }
+
+#services {
+  margin: 40px 0px; }
+  #services .container-web .row P {
+    font-size: 22px; }
+  #services .container-web .row ul li {
+    justify-content: center;
+    margin-bottom: 20px; }
+    #services .container-web .row ul li img {
+      width: 100%;
+      height: 400px;
+      object-fit: fill;
+      padding: 30px 0px; }
 
 /*# sourceMappingURL=style.css.map */

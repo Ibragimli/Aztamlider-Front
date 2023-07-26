@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/scss/style.css">
+    <!-- small logo -->
+    <link rel="shortcut icon" href="./assets/Images/Emblem.png" type="image/x-icon" />
+
+    <!-- @*Bootstrap  *@ -->
+    <link href="~/plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="./plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" />
+    <!-- @*Bootstrap  *@ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AzTamLider</title>
+
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="./assets/styles/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;700&family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <section id="header">
+            <div class="container-web">
+                <div class="row">
+                    <div class=" col-lg-3 col-6   webLogo">
+                        <a href="./index.html">
+                            <img src="./assets/Images/AZTAM Lider.png" alt="">
+
+                        </a>
+                    </div>
+
+                    <div class="navWeb  col-lg-8 col-md-7   navbarBox">
+                        <nav class=" webNavbar">
+                            <ul class="mainNavbar">
+                                <li class="nav-item dropdown dropdown-hover">
+                                    <a class="nav-link  " href="#" role="button" aria-expanded="false">
+                                        <h1>LAYİHƏLƏNDİRMƏ</h1>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./project.html">
+                                                <h1>
+                                                    MEP DİZAYN
+                                                </h1>
+                                            </a></li>
+                                        <!-- <li><a class="dropdown-item" href="#">
+                                                <h1>
+                                                    BİM7D HAQQINDA
+                                                </h1>
+                                            </a></li> -->
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="./services.html" role="button">
+                                        <h1>
+                                            XİDMƏTLƏR
+                                        </h1>
+                                    </a>
+                                    <!-- <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-wind"></i>
+                                                <h1>
+                                                    İsitmə Soyutma və Havalandırma
+                                                </h1>
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cloud-bolt"></i>
+                                                <h1>
+                                                    Alçaq Gərilim və Orta Gərilim Elektrik İşləri
+                                                </h1>
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plug"></i>
+                                                <h1>
+                                                    Zəif Axın Sistemləri
+                                                </h1>
+                                            </a></li>
+                                    </ul> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./reference.html">
+                                        <h1>
+                                            REFERANSLAR
+                                        </h1>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./documents.html">
+                                        <h1>
+                                            SƏNƏDLƏR
+                                        </h1>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./aboutus.html">
+                                        <h1>
+                                            HAQQIMIZDA
+                                        </h1>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./contactus.html">
+                                        <h1>ƏLAQƏ</h1>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class=" col-lg-1 col-6  langSearch">
+                        <!-- language -->
+                        <div class="  languageBox">
+                            <div class="headRight ">
+                                <div class="headLanguage ">
+                                    <div class="langDropdown">
+                                        <a href="#" onclick="toggleDropdown()">
+                                            Az
+                                        </a>
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li onclick="selectLanguage('az')">
+                                                    <a href="/Home/ChangeLanguage?culture=az-Latn-AZ">Az</a>
+                                                </li>
+                                                <li onclick="selectLanguage('en')">
+                                                    <a href="/Home/ChangeLanguage?culture=en-US">En</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="arrow-down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- searchBox -->
+                        <div class="ms-1 me-2 searchBox">
+                            <a href="#" class="searchDeskBtn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <form class=" mt-3 searchFormDeskBox" role="search">
+                                <div class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-dark" type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- mobile navbar -->
+                        <nav class="navbar navbar-mobile">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h1 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                        <img src="./assets/Images/xaribulbulgroup-logo.png" alt="">
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <h1>
+                                                    LAYİHƏLƏNDİRMƏ
+                                                </h1>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">
+                                                        <h1>MEP DİZAYN</h1>
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#">
+                                                        <h1>BİM7D HAQQINDA</h1>
+                                                    </a></li>
+                                            </ul>
+                                        </li>
+
+                                        <ul class="dropdown-menu">
+
+                                            <li><a class="dropdown-item" href="#">
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#">
+                                                </a></li>
+                                        </ul>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <h1>XİDMƏTLƏR</h1>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">
+                                                        <i class="fas fa-wind"></i>
+                                                        <h1>İsitmə Soyutma və Havalandırma</h1>
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fas fa-cloud-bolt"></i>
+                                                        <h1>Alçaq Gərilim və Orta
+                                                            Gərilim <br>Elektrik İşləri</h1>
+                                                    </a></li>
+                                                <li><a class="dropdown-item" href="#"> <i class="fas fa-plug"></i>
+                                                        <h1>Zəif Axın Sistemləri</h1>
+                                                        </h1>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <h1>REFERANSLAR</h1>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <h1>SƏNƏDLƏR</h1>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <h1>HAQQIMIZDA</h1>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <h1>ƏLAQƏ</h1>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                    <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-dark" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <section id="breadCrumb">
+            <div class="container-web">
+                <div class="row">
+                    <div class="col-lg-12 breadCrumbBox">
+                        <ul>
+                            <li>
+                                <h1>XİDMƏTLƏR</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Logos -->
+        <section id="services">
+            <div class="container-web">
+                <div class="row">
+                    <p>
+                        “AZTAM LİDER” MMC-də biz müxtəlif sektorların ehtiyaclarına cavab verən yüksək səviyyəli
+                        mühəndislik və konsultasiya xidmətlərini təklif edirik. Müştərilərimizin mühəndislik tələbləri
+                        və istəkləri reallaşdırırıq. Yüksək ixtisaslı mütəxəssislərdən ibarət olan komandamız və
+                        mükəmməlliyə sadiqliyimiz, bizim müştərilərin bütün mühəndislik sorğularını qarşılayır. MEP
+                        layihənin həyata keçirilməsinin əvvəlindən sonuna qədər xidmətlərimizin hər bir aspektində
+                        mükəmməlliyi təmin etməyə zəmanət veririk.
+                    </p>
+                    <h1>Xidmətlərimizə daxildir:</h1>
+                    <ul>
+                        <li class="row">
+                            <h1>1.Su təchizatı və kanalizasiya sistemlərinin quraşdırılması:
+                            </h1>
+                            <div class="col-lg-5 col-md-5 col-sm-5">
+                                <img src="./assets/Images/industrial_filtration_system_1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5">
+                                <img src="./assets/Images/gettyimages-1189361979-612x612.jpg" alt="">
+                            </div>
+                        
+                            <p>
+                                Səmərəli su təchizatı və tullantı su sistemlərinin layihələndirilməsi və quraşdırılması
+                                üzrə fəaliyyət göstəririk. Planlaşdırmadan icraya qədər komandamız layihələriniz üçün
+                                etibarlı və davamlı su idarəetmə həllini təmin edir. Peşakarlarımız tərəfindən öncədən
+                                zəruri olan hesablamalar aparılır və layihəyə uyğun olan avadanlığlar seçilir.
+                                Kanalizasiya və su sistemlərin quraşdırlması üçün ən keyfiyyətli materiallardan istifadə
+                                olunur və sifarişçiyə əvvəlcədən istifadə oluna bilən avadanlıqlar haqqında tam
+                                məlumatlar və smeta göndərilir. Əsas prioritetlərimizdən biri isə sifarişçinin
+                                məmlunluğu və tələblərin qarşılamasıdır.
+                            </p>
+                        </li>
+                        <li class="row">
+                            <h1>2.HVAC Sistemləri: </h1>
+                            <div class="col-lg-8 col-md-10 col-sm-8">
+                                <img style="object-fit: fill; height: 450px; padding: 0px; margin-bottom: 20px;" src="./assets/Images/1690373678665.png" alt="">
+                            </div>
+                            <p>Mütəxəssislərimiz tərəfindən ən müasir və keyfiyyətli İsitmə, Havalandırma & Kondisioner
+                                (HVAC) sistemlərinin əksər növləri (sənaye və məişət) layihələndirmə işləri, həmçinin
+                                sifarişçiyə avadanlıqlarının quraşdırılması və texniki istismarı təqdim olunur. Enerji
+                                səmərəliliyini yüksək dərəcədə artırmaqla yanaşı, optimal daxili hava keyfiyyətini təmin
+                                etməyə diqqət yetiririk.</p>
+                        </li>
+                        <li class="row">
+                            <h1>3.İstilik və Soyutma Sistemləri:</h1>
+                            <div class="col-lg-5 col-md-5 col-sm-5">
+                                <img src="./assets/Images/Lab Ventilation.gif" alt="">  
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-5">
+                                <img src="./assets/Images/HVAC Lab Ventilation.gif" alt="">
+                            </div>
+                            <p>Yaşayış, ticarət, istərsə də sənaye obyektlər üçün sifarişçinin xüsusi tələblərə uyğun
+                                olan yüksək səviyyəli İsitmə və Soyutma sistemlərin quraşdırılmasını təklif edirik.
+                                Sistemlərimiz il boyu sabit və rahat dərəcə ilə təmin etmək üçün nəzərdə tutulmuşdur.
+                                Peşakar mühəndislərdən ibarət olan komandamız tərəfindən layihəyə əsasən texniki
+                                hesablamalar apardıqdan sonra zəruri olan avadanlığın seçimini və konsultasiya xidmətini
+                                həyata keçirir.</p>
+
+                        </li>
+                        <li>
+                            <h1>4.Tüstüsovurma və Ventilyasiya Sistemləri:</h1>
+
+                            <p>
+                                Təhlükəsizlik - bizim şirkət üçün hər şeydən önəmlidir. İlk növbədə Tüstüsovurma
+                                sistemləri fövqəladə hallar zamanında binalardan tüstü & zərərli qazları tez və effektiv
+                                şəkildə təmizləmək, həmçinin insanların rifahını təmin etmək üçün nəzərdə tutulmuşdur.
+                            </p>
+                        </li>
+                        <li>
+                            <h1>5.Zəif axın sistemlərinin layihələndirilməsi:</h1>
+
+                            <p>Bizim mühəndislik təcrübəmiz suvarma, yağış suyunun yığılması və s. kimi müxtəlif aşağı
+                                təzyiqli sistemləri əhatə edən zəif axın sistemlərinin layihələndirilməsini həyata
+                                keçirmək ilə məşquldur. Mütəxəssislər tərəfindən layihənin tələblərinə və müştərinin
+                                sifarişinə uyğun olaraq İT və Rabitə sistemlərinin, həmçinin digər mühüm Kompüter
+                                sistemlərinin detallı şəkildə layihələndirilməsi ilə əsaslanır.</p>
+                        </li>
+                        <li>
+                            <h1>6.Elektrik və İşıqlandırma Sistemlərinin Layihələndirilməsi:</h1>
+
+                            <p>Biz yaşayış, ticarət və sənaye obyektləri üçün səmərəli, güvənli elektrik və işıqlandırma
+                                sistemlərinin yaradılmasında üstün veririk. Binalarda Xarici və Daxili Enerji Təchizatı,
+                                Elektrik şəbəkələrinin və qurğularının layihiləndirilməsi, quraşdırılması və xidmət
+                                olunması, Aşağı, Orta və Yüksək gərginlikli şəbəkələrdə enerji təchizatı sistemlərin
+                                layihələndirməsi, montajı, və digər müxtəlif xidmətlər təklif olunur. Layihələndirmə
+                                zamanı təhlükəsizlik, enerji səmərəliliyi və qüsursuz funksionallığa üstünlük verirlir.
+                            </p>
+                        </li>
+                        <li>
+                            <h1>7. Yanğından Mühafizə Sistemləri:</h1>
+
+                            <p>İnsanların və əmlakın yanğın təhlükələrindən qorunması son dərəcədə vacibdir. Yanğından
+                                mühafizə sistemlərimiz yanğınları effektiv şəkildə aşkar etmək, idarə etmək və söndürmək
+                                üçün nəzərdə tutulmuşdur. Beləliklə, müştərilərimiz üçün obyektdə fövqəladə halların
+                                qarşısını ala biləcək və təhlükəli hallar zamanı baş tutacaq yanğından təhlükəsizlik
+                                sisteminin quraşdırılmasını təmin edirik.</p>
+                        </li>
+                        <li>
+                            <h1>8.Yanğına Nəzarət Sistemləri və Konsultasiya Xidmətləri:</h1>
+
+                            <p>Şirkətimiz sifarişçiyə hərtərəfli yanğına nəzarət sistemləri və məsləhətçi xidmətlərini
+                                təklif edir. Yanğın təhlükəsizliyi və qarşısının alınması tədbirləri haqqında vacib
+                                qərarları qəbul etməyə müştərimizlərə imkan yaradır.</p>
+                        </li>
+                        <li>
+                            <h1>9.Sənaye Obyektlərinin Texnoloji Avadanlığının Yerləşdirilməsi:</h1>
+
+                            <p>Komandamız təhlükəsizlik və məhsuldarlığı optimallaşdırmaq üçün texnoloji avadanlığın
+                                sənaye obyektləri daxilində strateji yerləşdirilməsi üzrə ixtisaslaşmışdır. </p>
+                        </li>
+                    </ul>
+
+                    <h1>“AZTAM LİDER” MMC-ni seçməyin səbəbləri:</h1>
+                    <ul>
+                        <li>
+                            <h1>Təcrübə:</h1>
+                            <p>MEP (Mexaniki/ Elektrik/ Santexnika) 10 illik təcrübəyə malik olan
+                                mühəndislərdən və mütəxəssislərdən ibarət olan komandamız müxtəlif mürəkkəb layihələri
+                                həll etmək üçün təcrübəyə malikdir.</p>
+                        </li>
+                        <li>
+                            <h1>Müştəri-yönümlü yanaşma:</h1>
+                            <p>Biz, müştərilərimizin özünəməxsus ehtiyaclarını keyfiyyətli dərəcədə
+                                qarşılanmasını və xidmətlərimizi onların xüsusi tələblərinə əsasən təmin etməyə
+                                hazırıq.</p>
+                        </li>
+                        <li>
+                            <h1>İnnovasiya və Səmərəlilik:</h1>
+                            <p>Mühəndislik texnologiyasındakı ən son nailiyyətləri əhatə edərək, biz innovativ və
+                                enerjiyə qənaət edən məqamları təqdim etməklə əsaslanırıq.</p>
+                        </li>
+                        <li>
+                            <h1>Uyğunluq və Təhlükəsizlik: </h1>
+                            <p>Bütün hazırladığımız layihələr və avadanlığlar sənaye standartlarına, qaydalarına
+                                və təhlükəsizlik protokollarına uyğundur. Biz, müştərilərimiz üçün ən yüksək
+                                təhlükəsizlik səviyyəsini təmin etməyə zəmanət veririk.</p>
+                        </li>
+                        <li>
+                            <h1>Etibarlılıq və Vaxtında icra:</h1>
+                            <p>Biz keyfiyyət baxımından güzəşt vermədən layihələri vaxtında və sifarişçinin
+                                büdcəyə uyğun hazırlanması təmin edirik.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Button
+        <div class="contactUsBtnBox " id="hereket">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal" id="ctnBtn"><i
+                    class="fa-solid fa-phone-volume "></i></a>
+        </div> -->
+
+    </main>
+
+    <footer>
+        <section id="copyRight">
+            <div class="container-web">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright© 2023 AZTAMLİDER. Bütün hüquqlar qorunur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- @*Bootstrap  *@ -->
+    <script src="./plugins/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- @*Bootstrap  *@ -->
+
+    <!-- @*jquery cdn  *@ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- @*jquery cdn  *@ -->
+
+
+
+    <script src="./assets/js/localitaztion.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger-icon').click(function () {
+                $('.mobileNavbar').toggle();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.searchDeskBtn').click(function () {
+                $('.searchFormDeskBox').toggle();
+            });
+        });
+    </script>
+
+    <!-- headerJquery -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var headerHeight = $('header').outerHeight();
+                var tempValue = headerHeight / 2.5;
+                const currentScrollHeight = window.scrollY;
+
+
+                if (currentScrollHeight > tempValue) {
+                    $('header').addClass('headerFixed');
+                } else {
+                    $('header').removeClass('headerFixed');
+                }
+
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

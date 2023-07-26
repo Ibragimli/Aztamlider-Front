@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/scss/style.css">
     <!-- small logo -->
-    <link rel="shortcut icon" href="./assets/Images/xaribulbulgroup-smalllogo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/Images/Emblem.png" type="image/x-icon" />
 
     <!-- @*Bootstrap  *@ -->
     <link href="~/plugins/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,47 +36,48 @@
 
 <body>
 
-    <header class="">
+    <header>
         <section id="header">
             <div class="container-web">
                 <div class="row">
                     <div class=" col-lg-3 col-6   webLogo">
-                        <a href="#">
-                            <img src="./assets/Images/xaribulbulgroup-logo.png" alt="">
+                        <a href="./index.html">
+                            <img src="./assets/Images/AZTAM Lider.png" alt="">
 
                         </a>
                     </div>
 
+                    <!-- nav Web -->
                     <div class="navWeb  col-lg-8 col-md-7   navbarBox">
                         <nav class=" webNavbar">
                             <ul class="mainNavbar">
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown dropdown-hover">
                                     <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         <h1>LAYİHƏLƏNDİRMƏ</h1>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">
+                                        <li><a class="dropdown-item" href="./project.html">
                                                 <h1>
                                                     MEP DİZAYN
                                                 </h1>
-                                            </a></li>
-                                        <li><a class="dropdown-item" href="#">
+                                            </a>
+                                        </li>
+                                        <!-- <li><a class="dropdown-item" href="#">
                                                 <h1>
                                                     BİM7D HAQQINDA
                                                 </h1>
-                                            </a></li>
+                                            </a></li> -->
                                     </ul>
                                 </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="./services.html" role="button"  aria-expanded="false">
                                         <h1>
                                             XİDMƏTLƏR
                                         </h1>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <!-- <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-wind"></i>
                                                 <h1>
                                                     İsitmə Soyutma və Havalandırma
@@ -92,31 +93,31 @@
                                                     Zəif Axın Sistemləri
                                                 </h1>
                                             </a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">
+                                    <a class="nav-link " aria-current="page" href="./reference.html">
                                         <h1>
                                             REFERANSLAR
                                         </h1>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">
+                                    <a class="nav-link " aria-current="page" href="./documents.html">
                                         <h1>
                                             SƏNƏDLƏR
                                         </h1>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">
+                                    <a class="nav-link " aria-current="page" href="./aboutus.html">
                                         <h1>
                                             HAQQIMIZDA
                                         </h1>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="#">
+                                    <a class="nav-link " aria-current="page" href="./contactus.html">
                                         <h1>ƏLAQƏ</h1>
                                     </a>
                                 </li>
@@ -455,9 +456,11 @@
             $(window).scroll(function () {
                 var headerHeight = $('header').outerHeight();
 
-                var scrolled = $(window).scrollTop();
+                var tempValue = headerHeight / 2.5;
+                const currentScrollHeight = window.scrollY;
 
-                if (scrolled > headerHeight) {
+
+                if (currentScrollHeight > tempValue) {
                     $('header').addClass('headerFixed');
                 } else {
                     $('header').removeClass('headerFixed');
