@@ -352,7 +352,14 @@ body a {
     max-width: 720px; } }
 @media (min-width: 992px) {
   .container-web {
-    max-width: 1100px; } }
+    max-width: 1100px; }
+
+  #services .container-web .row ul li .marginLeft {
+    margin-left: 3rem !important; }
+  #services .container-web .row ul li .marginRight {
+    margin-right: 3rem !important; }
+  #services .container-web .row ul li img {
+    object-fit: fill; } }
 @media (min-width: 1200px) {
   .container-web {
     max-width: 1220px; } }
@@ -378,6 +385,18 @@ body a {
   #partnerLogos {
     padding: 80px 25px !important; } }
 @media only screen and (max-width: 992px) {
+  #services {
+    margin: 50px 20px 5px 20px !important; }
+    #services .container-web .row ul li .objectCover {
+      object-fit: cover !important; }
+    #services .container-web .row ul li .objectContain {
+      object-fit: contain !important; }
+    #services .container-web .row ul li img {
+      width: 100%;
+      max-height: 300px !important;
+      object-fit: fill;
+      padding: 15px 0px !important; }
+
   #project {
     margin: 50px 20px 5px 20px !important; }
     #project .container-web .row ul li .servicesBoxs .servicesBox {
@@ -456,17 +475,22 @@ body a {
   .navbar-mobile {
     display: block !important; }
 
-  #aboutUs .container-web .row .aboutImageBox {
-    padding: 0px 15px !important;
-    margin-top: 5px;
-    margin-bottom: 30px !important; }
-    #aboutUs .container-web .row .aboutImageBox .aboutImage {
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important; }
-  #aboutUs .container-web .row .aboutTextBox {
-    margin-left: 10px !important;
-    padding: 0px 10px 0px 10px !important; }
+  #aboutUs {
+    margin: 50px 20px 25px 20px !important; }
+    #aboutUs .container-web .row .aboutImageBox {
+      padding: 0px 15px !important;
+      margin-top: 20px !important; }
+      #aboutUs .container-web .row .aboutImageBox .aboutImage {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 22px !important; }
+      #aboutUs .container-web .row .aboutImageBox .mobileAboutImage {
+        display: none !important; }
+    #aboutUs .container-web .row .aboutTextBox {
+      padding: 0px 10px 0px 10px !important; }
+      #aboutUs .container-web .row .aboutTextBox p {
+        font-size: 18px !important; }
 
   #contactUs {
     margin: 60px 25px !important;
@@ -672,13 +696,9 @@ body a {
     opacity: 1;
     transform: translateX(0); } }
 #partnerLogos {
-  background-image: url("/assets/Images/elektrik-proje-cizimi.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   padding: 80px 0px;
-  background-color: #e8e7e542; }
+  background-color: #fdfdfd9f; }
   #partnerLogos .partnerTitleBox h1 {
     text-align: center;
     margin-bottom: 25px; }
@@ -746,11 +766,14 @@ body a {
   flex-direction: column;
   padding: 0px 25px; }
   #aboutUs .container-web .row .aboutTextBox p {
+    text-align: justify;
     font-size: 18px; }
+  #aboutUs .container-web .row .aboutTextBox h1 {
+    font-size: 36px; }
   #aboutUs .container-web .row .aboutTextBox ul li {
     list-style: square; }
     #aboutUs .container-web .row .aboutTextBox ul li p {
-      font-size: 18px; }
+      font-size: 22px; }
 
 #breadCrumb {
   width: 100%;
@@ -827,17 +850,19 @@ body a {
     width: calc((100vw - 100vw * 0.78));
     height: calc((100vh - 100vh * 0.54));
     z-index: -1; }
-  #contactUs .container-web .row .contactInfo h1 {
-    margin-bottom: 10px; }
-  #contactUs .container-web .row .contactInfo ul {
-    margin-left: 10px; }
-    #contactUs .container-web .row .contactInfo ul li {
-      margin-bottom: 5px; }
-      #contactUs .container-web .row .contactInfo ul li a {
-        color: black;
-        font-size: 22px; }
-        #contactUs .container-web .row .contactInfo ul li a i {
-          margin-right: 5px; }
+  #contactUs .container-web .row .contactInfo {
+    margin-bottom: 30px; }
+    #contactUs .container-web .row .contactInfo h1 {
+      margin-bottom: 10px; }
+    #contactUs .container-web .row .contactInfo ul {
+      margin-left: 10px; }
+      #contactUs .container-web .row .contactInfo ul li {
+        margin-bottom: 5px; }
+        #contactUs .container-web .row .contactInfo ul li a {
+          color: black;
+          font-size: 22px; }
+          #contactUs .container-web .row .contactInfo ul li a i {
+            margin-right: 5px; }
 
 #document {
   margin: 40px 0px; }
@@ -922,7 +947,8 @@ body a {
 #project {
   margin: 40px 0px; }
   #project .container-web .row p {
-    font-size: 22px; }
+    font-size: 22px;
+    text-align: justify; }
   #project .container-web .row ul li {
     margin-bottom: 30px; }
     #project .container-web .row ul li h1 {
@@ -938,14 +964,14 @@ body a {
 #services {
   margin: 40px 0px; }
   #services .container-web .row P {
-    font-size: 22px; }
+    font-size: 22px;
+    text-align: justify; }
   #services .container-web .row ul li {
     justify-content: center;
     margin-bottom: 20px; }
     #services .container-web .row ul li img {
       width: 100%;
       height: 400px;
-      object-fit: fill;
       padding: 30px 0px; }
 
 /*# sourceMappingURL=style.css.map */
