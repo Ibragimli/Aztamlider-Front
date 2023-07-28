@@ -7,7 +7,7 @@
  width: 100%;
   padding: 80px 0px;
   // background-color: #e8e7e542;
-  background-color: #fdfdfd9f;
+  background-color: #00000021;
   
   .partnerTitleBox {
     h1 {
@@ -26,8 +26,15 @@
   .partnerOwlCarouselBox {
     .mobile-owl {
       .item {
+        display: flex;
+        align-items: center;
+        height: 140px;
         a {
-          img {}
+          img {
+            object-fit: scale-down;
+            width: 200px;
+            max-height: 140px;
+          }
         }
       }
     }
