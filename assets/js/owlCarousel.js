@@ -1,7 +1,7 @@
 $(function () {
     $('.mobile-owl').owlCarousel({
-        loop: false,
-        autoplay: false,
+        loop: true,
+        autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
         nav: false,
